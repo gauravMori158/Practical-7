@@ -2,6 +2,6 @@
 {
     internal interface IUserInfo
     {
-        void PrintUserInfo(IPerson person );
+        string PrintUserInfo(IPerson person );
     }
 }

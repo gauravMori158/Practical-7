@@ -12,11 +12,11 @@ namespace DependencyInversionPrinciple
         /// Print User Info method That Prints Admin Details , like Name,id,Age and address 
         /// </summary>
         /// <param name="person"></param>
-        public void PrintUserInfo( IPerson person)
+        public string PrintUserInfo( IPerson person)
         {
-            Console.WriteLine("\n\n..............Admin Info ..................\n\n");
-            Console.WriteLine($"Post : ADMIN \nUser Name : {person.Name} \nId : {person.Id}\nAge : {person.Age}\n" +
-                $"Address : {person.Address}");
+            return $"\n\n..............User Info .................." +
+                $"\nPost : Admin \nUser Name : {person.Name} \nId : {person.Id}\nAge : {person.Age}\n" +
+                $"Address : {person.Address}";
         }
 
          

@@ -26,13 +26,9 @@ namespace OpenClosePrinciple
       /// <param name="amount"></param>
       /// <returns>Double Amount</returns>
         public override double Discount (double amount)
-        { 
-          
-            return  base.Discount(amount) -  amount * 0.05;
-
-           
-
-    }
+        {          
+            return  base.Discount(amount) -  amount * 0.05;         
+        }
 }
 
     public class SBICardDiscount : DiscountClass1

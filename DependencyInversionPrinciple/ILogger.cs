@@ -2,6 +2,6 @@
 {
     internal interface ILogger
     {
-        void LoginMessage(IPerson person, string message);
+        string LoginMessage(IPerson person, string message);
     }
 }

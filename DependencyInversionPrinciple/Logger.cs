@@ -13,10 +13,9 @@ namespace DependencyInversionPrinciple
         /// </summary>
         /// <param name="person"></param>
         /// <param name="message"></param>
-        public void LoginMessage(IPerson person, string message)
+        public string LoginMessage(IPerson person, string message)
         {
-            Console.WriteLine(message);
-            Console.WriteLine($"User Name : {person.Name} \nId : {person.Id}\n");
+            return $"{message}\nUser Name : {person.Name} \nId : {person.Id}\n";
         }
     }
 }

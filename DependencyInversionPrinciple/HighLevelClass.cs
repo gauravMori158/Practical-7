@@ -19,7 +19,7 @@ namespace DependencyInversionPrinciple
         public void MailSender()
         {
             ILogger logger =  Factory.GetLogger();
-            logger.LoginMessage(person, "Login Successfull ... ");
+            Console.WriteLine(logger.LoginMessage(person, "Login Successfull ... ")) ;
         }
         /// <summary>
         /// Method That Makes Reference of userInfo type using that it will call the
@@ -28,7 +28,7 @@ namespace DependencyInversionPrinciple
         public void PrintUser()
         {
             IUserInfo userInfo =  Factory.GetUserInfo();
-            userInfo.PrintUserInfo(person  );
+            Console.WriteLine(userInfo.PrintUserInfo(person)); 
         }
 
     }
